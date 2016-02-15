@@ -1,0 +1,1 @@
+ const unsigned char MDCSwipeToChooseVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:MDCSwipeToChoose  PROJECT:Pods-0.2.3" "\n"; const double MDCSwipeToChooseVersionNumber __attribute__ ((used)) = (double)0.2;

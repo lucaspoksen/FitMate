@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 4.3">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="cFlag" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="categories" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="GalleryPhoto" representedClassName=".GalleryPhoto" syncable="YES">
+        <attribute name="gID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="gallery" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="age" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="birthday" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="contactEmail" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="device" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="distanceMiles" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstname" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="galleryCount" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gender" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastMessage" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="lastMessageFlag" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastname" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="matchedDate" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="photo" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="settingDistance" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="settingShowAgeMax" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="settingShowAgeMin" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="settingShowMeFlag" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uAbout" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="uID" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="username" attributeType="String" defaultValueString="NONE" syncable="YES"/>
+        <attribute name="uTag" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Category" inverseName="user" inverseEntity="Category" syncable="YES"/>
+        <relationship name="gallery" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GalleryPhoto" inverseName="user" inverseEntity="GalleryPhoto" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-54" positionY="108" width="128" height="105"/>
+        <element name="GalleryPhoto" positionX="-56" positionY="254" width="128" height="90"/>
+        <element name="User" positionX="-288" positionY="-72" width="128" height="420"/>
+    </elements>
+</model>

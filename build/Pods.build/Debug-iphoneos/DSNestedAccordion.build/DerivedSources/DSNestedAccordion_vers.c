@@ -1,0 +1,1 @@
+ const unsigned char DSNestedAccordionVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:DSNestedAccordion  PROJECT:Pods-0.1.0" "\n"; const double DSNestedAccordionVersionNumber __attribute__ ((used)) = (double)0.1;

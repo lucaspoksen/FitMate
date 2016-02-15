@@ -1,0 +1,1 @@
+ const unsigned char JSQMessagesViewControllerVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:JSQMessagesViewController  PROJECT:Pods-7.1.0" "\n"; const double JSQMessagesViewControllerVersionNumber __attribute__ ((used)) = (double)7.1;
